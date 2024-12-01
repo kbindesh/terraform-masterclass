@@ -8,7 +8,7 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "sandboxes" {
+variable "sandbox_list" {
   type    = list(string)
-  default = ["sandbox_one", "sandbox_two", "sandbox_three"]
+  default = ["dev-sandbox", "sit-sandbox", "uat-sandbox"]
 }

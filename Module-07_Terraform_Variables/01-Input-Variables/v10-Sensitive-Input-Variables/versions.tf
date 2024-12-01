@@ -1,6 +1,5 @@
-# Terraform Block
 terraform {
-  required_version = ">= 1.4" 
+  required_version = ">= 1.4"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -15,6 +14,6 @@ provider "aws" {
   profile = "default"
 }
 /*
-Note-1:  AWS Credentials Profile (profile = "default") configured on your local desktop terminal  
+AWS Credentials Profile (profile = "default") configured on your local system's terminal  
 $HOME/.aws/credentials
 */

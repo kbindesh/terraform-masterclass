@@ -1,4 +1,4 @@
-# Create Security Group - SSH Traffic
+# Create Security Group - Allow SSH ingress traffic
 resource "aws_security_group" "vpc-ssh" {
   name        = "vpc-ssh"
   description = "Dev VPC SSH"
@@ -18,7 +18,7 @@ resource "aws_security_group" "vpc-ssh" {
   }
 }
 
-# Create Security Group - Web Traffic
+# Create Security Group - Allow ingress web traffic
 resource "aws_security_group" "vpc-web" {
   name        = "vpc-web"
   description = "Dev VPC Web"
